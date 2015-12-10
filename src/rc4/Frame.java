@@ -4,8 +4,6 @@
  */
 package rc4;
 
-import javax.swing.text.DefaultEditorKit;
-
 /**
  *
  * @author Ivan Garcia Miranda y Alvaro Alonso Isla
