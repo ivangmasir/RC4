@@ -8,14 +8,18 @@ package rc4;
  *
  * @author Ivan Garcia y Alvaro Alonso
  */
+//Clase encargada del cifrado RC4
 public class Rc4 {
 
+    //Variables
     private char i;
     private char j;
     private int[] Sbox;
     private String key;
 
+    //Constructor de la clase si recibe un String
     public Rc4(String k) {
+        //Inicializamos las variables
         this.i = 0;
         this.j = 0;
         this.Sbox = new int[256];
@@ -25,7 +29,8 @@ public class Rc4 {
         }
     }
 
-    //Mezcla
+    //Primera mezcla de enteros en la caja Sbox
+    //La salida se utiliza como entrada en prga
     public void ksa() {
         j = 0;
         int k;
